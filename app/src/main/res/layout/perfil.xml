@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/perfil_sw"
+            android:paddingBottom="60dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:text="Nombre de Usuario" />
+
+                    <TextView
+                        android:id="@+id/perfil_nombre_usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:text="Razon Social" />
+
+                    <TextView
+                        android:id="@+id/perfil_razon_Social"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:text="lol2" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:text="Numero ruc" />
+
+                    <TextView
+                        android:id="@+id/perfil_numero_ruc"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:text="0000000000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:text="Linea de credito" />
+
+                    <TextView
+                        android:id="@+id/perfil_Linea_de_credito"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:text="9999999.0" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:text="Estado de deuda" />
+
+                    <TextView
+                        android:id="@+id/perfil_Estado_de_deuda"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:text="no debe" />
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DatosContactos">
+                </TableLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Modificar contraseña"
+                        android:textAlignment="center"
+                        />
+                    <EditText
+                        android:hint="contraseña actual"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/perfil_contra_actual" />
+                    <EditText
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:hint="contraseña nueva"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/perfil_contra_nueva" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:text="cambiar contraseña"
+                        android:id="@+id/perfil_button_cambiar_pass"
+
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:minWidth="0dp"
+                android:layout_height="60dp"
+                android:src="@drawable/user"
+                android:scaleType="fitCenter"
+                android:id="@+id/perfil_button"
+                android:layout_weight="1"
+                android:focusable="false" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:minWidth="0dp"
+                android:layout_height="60dp"
+                android:src="@drawable/grocery"
+                android:scaleType="fitCenter"
+                android:id="@+id/catalogo_button"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:minWidth="0dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cart"
+                android:scaleType="fitCenter"
+                android:id="@+id/hacer_pedido_button"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:minWidth="0dp"
+                android:layout_height="60dp"
+                android:src="@drawable/truck"
+                android:scaleType="fitCenter"
+                android:id="@+id/administrar_pedido_button"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:minWidth="0dp"
+                android:layout_height="60dp"
+                android:src="@drawable/history"
+                android:scaleType="fitCenter"
+                android:id="@+id/historial_button"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+

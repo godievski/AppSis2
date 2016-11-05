@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eliga una forma de realizar el pedido"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/hacer_pedido_personalizar"
+                    android:text="Personalizar"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="Lista de Pedidos"
+                    android:id="@+id/hacer_pedido_lista_de_pedido"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:weightSum="5">
+
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:minWidth="0dp"
+                android:layout_height="60dp"
+                android:src="@drawable/user"
+                android:scaleType="fitCenter"
+                android:id="@+id/perfil_button"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:minWidth="0dp"
+                android:layout_height="60dp"
+                android:src="@drawable/grocery"
+                android:scaleType="fitCenter"
+                android:id="@+id/catalogo_button"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:minWidth="0dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cart"
+                android:scaleType="fitCenter"
+                android:id="@+id/hacer_pedido_button"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:minWidth="0dp"
+                android:layout_height="60dp"
+                android:src="@drawable/truck"
+                android:scaleType="fitCenter"
+                android:id="@+id/administrar_pedido_button"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:minWidth="0dp"
+                android:layout_height="60dp"
+                android:src="@drawable/history"
+                android:scaleType="fitCenter"
+                android:id="@+id/historial_button"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

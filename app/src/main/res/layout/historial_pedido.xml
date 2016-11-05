@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/historial_sw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60dp">
+            <!--aca se crean los catalogos-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/historial_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="HISTORIAL DE PEDIDO"
+                    android:textSize="24dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Escoger Nº Pedido"
+                        android:textSize="18dp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:id="@+id/historial_numero"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha"
+                    android:id="@+id/historial_fecha"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monto"
+                    android:id="@+id/historial_monto"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Estado"
+                    android:id="@+id/historial_estado"
+                    android:textSize="18dp"/>
+                <LinearLayout
+                    android:id="@+id/historial_detalle_pedido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Usar Pedido de nuevo"
+                    android:id="@+id/historial_usar_pedido"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:weightSum="5">
+
+
+            <ImageButton
+                android:id="@+id/perfil_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/user" />
+
+            <ImageButton
+                android:id="@+id/catalogo_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/grocery" />
+
+            <ImageButton
+                android:id="@+id/hacer_pedido_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cart" />
+
+            <ImageButton
+                android:id="@+id/administrar_pedido_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/truck" />
+
+            <ImageButton
+                android:id="@+id/historial_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/history" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
